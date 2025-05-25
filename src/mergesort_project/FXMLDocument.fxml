@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #111;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mergesort_project.FXMLDocumentController">
+   <children>
+      <Label layoutX="415.0" layoutY="31.0" text="Merge Sort" textFill="#a333ff">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="113.0" text="Enter Size of Array :" textFill="#fb1fff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="length_array" layoutX="272.0" layoutY="116.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="Enter_size" layoutX="488.0" layoutY="115.0" mnemonicParsing="false" onAction="#Enter_size" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: blue;" text="Enter" textFill="#fff6f6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="err1" layoutX="620.0" layoutY="116.0" prefHeight="27.0" prefWidth="270.0" textFill="#bf0b0b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="16.0" layoutY="177.0" prefHeight="206.0" prefWidth="943.0" style="-fx-background-color: #041424; -fx-border-color: #fb1fff; -fx-border-width: 3; -fx-border-radius: 8;">
+         <content>
+            <VBox fx:id="container1" prefHeight="208.0" prefWidth="932.0" style="-fx-background-color: #041424;" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="MergeSort" layoutX="333.0" layoutY="400.0" mnemonicParsing="false" onAction="#MergeSort" prefHeight="58.0" prefWidth="350.0" style="-fx-background-color: darkred; -fx-border-color: red; -fx-border-width: 3; -fx-border-radius: 8;" text="Merge Sort" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="again" layoutX="431.0" layoutY="707.0" mnemonicParsing="false" onAction="#StartAgain" prefHeight="58.0" prefWidth="214.0" style="-fx-background-color: crimson;" text="Start Again  🔄" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextArea fx:id="output" editable="false" layoutX="18.0" layoutY="479.0" prefHeight="214.0" prefWidth="943.0" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </TextArea>
+ 
+   </children>
+</AnchorPane>
